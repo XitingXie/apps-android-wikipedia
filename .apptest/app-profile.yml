@@ -1,0 +1,1765 @@
+auto:
+  project:
+    modules:
+    - app
+    - analytics/testkitchen
+    source_roots:
+    - app/src/main/java/org/wikipedia
+    resource_roots:
+    - app/src/main/res
+    architecture: mvvm
+    di_framework: none
+    navigation:
+      type: compose_navigation
+      nav_graphs: []
+      has_compose_nav: true
+  screens:
+  - name: NotificationSettingsActivity
+    file: app/src/main/java/org/wikipedia/settings/NotificationSettingsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SettingsFragment
+    file: app/src/main/java/org/wikipedia/settings/SettingsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: AppIconDialog
+    file: app/src/main/java/org/wikipedia/settings/AppIconDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: AboutActivity
+    file: app/src/main/java/org/wikipedia/settings/AboutActivity.kt
+    type: composable
+    category: logic_screen
+  - name: SettingsActivity
+    file: app/src/main/java/org/wikipedia/settings/SettingsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: LicenseActivity
+    file: app/src/main/java/org/wikipedia/settings/LicenseActivity.kt
+    type: composable
+    category: logic_screen
+  - name: PreferenceLoaderFragment
+    file: app/src/main/java/org/wikipedia/settings/PreferenceLoaderFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: BaseSettingsActivity
+    file: app/src/main/java/org/wikipedia/settings/BaseSettingsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: NotificationSettingsFragment
+    file: app/src/main/java/org/wikipedia/settings/NotificationSettingsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: WikipediaLanguagesActivity
+    file: app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesActivity.kt
+    type: activity
+    category: logic_screen
+  - name: WikipediaLanguagesFragment
+    file: app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: DeveloperSettingsActivity
+    file: app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: DeveloperSettingsFragment
+    file: app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: CategoryDeveloperPlayGround
+    file: app/src/main/java/org/wikipedia/settings/dev/playground/CategoryDeveloperPlayGroundActivity.kt
+    type: composable
+    category: logic_screen
+  - name: PageFragment
+    file: app/src/main/java/org/wikipedia/page/PageFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: ExtendedBottomSheetDialogFragment
+    file: app/src/main/java/org/wikipedia/page/ExtendedBottomSheetDialogFragment.kt
+    type: bottom_sheet
+    category: logic_screen
+  - name: PageActivity
+    file: app/src/main/java/org/wikipedia/page/PageActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TabActivity
+    file: app/src/main/java/org/wikipedia/page/tabs/TabActivity.kt
+    type: activity
+    category: logic_screen
+  - name: EditHistoryListActivity
+    file: app/src/main/java/org/wikipedia/page/edithistory/EditHistoryListActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ReferenceDialog
+    file: app/src/main/java/org/wikipedia/page/references/ReferenceDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: CampaignDialog
+    file: app/src/main/java/org/wikipedia/page/campaign/CampaignDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: LinkPreviewDialog
+    file: app/src/main/java/org/wikipedia/page/linkpreview/LinkPreviewDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: PageIssuesDialog
+    file: app/src/main/java/org/wikipedia/page/issues/PageIssuesDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: CustomizeToolbarActivity
+    file: app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarActivity.kt
+    type: activity
+    category: logic_screen
+  - name: CustomizeToolbarFragment
+    file: app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: UserContribFilterActivity
+    file: app/src/main/java/org/wikipedia/usercontrib/UserContribFilterActivity.kt
+    type: activity
+    category: logic_screen
+  - name: UserContribListActivity
+    file: app/src/main/java/org/wikipedia/usercontrib/UserContribListActivity.kt
+    type: activity
+    category: logic_screen
+  - name: UserInformationDialog
+    file: app/src/main/java/org/wikipedia/usercontrib/UserInformationDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SuggestedEditsVandalismPatrolFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsVandalismPatrolFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsImageRecsDialog
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SuggestedEditsRecentEditsActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsImageRecsOnboardingActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsRecentEditsOnboardingActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsImageTagDialog
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SuggestionsActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestionsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsCardsItemFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsItemFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsRecentEditsFilterActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFilterActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsCardsFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsTasksActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsImageRecsFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsTasksFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsImageTagEditActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagEditActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsItemFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsItemFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsImageTagsOnboardingActivity
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SuggestedEditsRecentEditsOnboardingFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsRecentEditsFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsImageTagsFragment
+    file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: DonateDialog
+    file: app/src/main/java/org/wikipedia/donate/DonateDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: DonationReminderActivity
+    file: app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderActivity.kt
+    type: activity
+    category: logic_screen
+  - name: DonationReminderScreen
+    file: app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: YearInReviewActivity
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewActivity.kt
+    type: activity
+    category: logic_screen
+  - name: YearInReviewCaptureRequest
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenCaptureHandler.kt
+    type: composable
+    category: logic_other
+  - name: YearInReviewOnboardingActivity
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: YearInReviewOnboardingScreen
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: YearInReviewDialog
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: YearInReviewScreenDeck
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenDeck.kt
+    type: composable
+    category: logic_compose_screen
+  - name: YearInReviewHighlightsScreen
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewHighlightsScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: YearInReviewGeoSlide
+    file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewGeoSlide.kt
+    type: composable
+    category: logic_other
+  - name: ReadingListTitleDialog
+    file: app/src/main/java/org/wikipedia/readinglist/ReadingListTitleDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: RemoveFromReadingListsDialog
+    file: app/src/main/java/org/wikipedia/readinglist/RemoveFromReadingListsDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: ReadingListsFragment
+    file: app/src/main/java/org/wikipedia/readinglist/ReadingListsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: ReadingListActivity
+    file: app/src/main/java/org/wikipedia/readinglist/ReadingListActivity.kt
+    type: activity
+    category: logic_screen
+  - name: AddToReadingListDialog
+    file: app/src/main/java/org/wikipedia/readinglist/AddToReadingListDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: MoveToReadingListDialog
+    file: app/src/main/java/org/wikipedia/readinglist/MoveToReadingListDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SortReadingListsDialog
+    file: app/src/main/java/org/wikipedia/readinglist/SortReadingListsDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: ReadingListFragment
+    file: app/src/main/java/org/wikipedia/readinglist/ReadingListFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: ReadingListItemActionsDialog
+    file: app/src/main/java/org/wikipedia/readinglist/ReadingListItemActionsDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: RecommendedReadingListSourceScreen
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: RecommendedReadingListSettingsScreen
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: RecommendedReadingListInterestsFragment
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListInterestsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: RecommendedReadingListSettingsActivity
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: RecommendedReadingListSourceFragment
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: RecommendedReadingListOnboardingActivity
+    file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ImagePreviewDialog
+    file: app/src/main/java/org/wikipedia/commons/ImagePreviewDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: FilePageFragment
+    file: app/src/main/java/org/wikipedia/commons/FilePageFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: FilePageActivity
+    file: app/src/main/java/org/wikipedia/commons/FilePageActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SingleFragmentActivity
+    file: app/src/main/java/org/wikipedia/activity/SingleFragmentActivity.kt
+    type: fragment
+    category: logic_screen
+  - name: BaseActivity
+    file: app/src/main/java/org/wikipedia/activity/BaseActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SingleWebViewActivity
+    file: app/src/main/java/org/wikipedia/activity/SingleWebViewActivity.kt
+    type: activity
+    category: logic_screen
+  - name: PlacesActivity
+    file: app/src/main/java/org/wikipedia/places/PlacesActivity.kt
+    type: activity
+    category: logic_screen
+  - name: PlacesFilterActivity
+    file: app/src/main/java/org/wikipedia/places/PlacesFilterActivity.kt
+    type: activity
+    category: logic_screen
+  - name: PlacesFragment
+    file: app/src/main/java/org/wikipedia/places/PlacesFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: GalleryActivity
+    file: app/src/main/java/org/wikipedia/gallery/GalleryActivity.kt
+    type: activity
+    category: logic_screen
+  - name: GalleryItemFragment
+    file: app/src/main/java/org/wikipedia/gallery/GalleryItemFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: WikipediaAlertDialog
+    file: app/src/main/java/org/wikipedia/compose/components/WikipediaAlertDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: DescriptionEditSuccessFragment
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: DescriptionEditTutorialFragment
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: DescriptionEditFragment
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: DescriptionEditActivity
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditActivity.kt
+    type: activity
+    category: logic_screen
+  - name: DescriptionEditTutorialActivity
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialActivity.kt
+    type: activity
+    category: logic_screen
+  - name: DescriptionEditSuccessActivity
+    file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ArticleEditDetailsFragment
+    file: app/src/main/java/org/wikipedia/diff/ArticleEditDetailsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: UndoEditDialog
+    file: app/src/main/java/org/wikipedia/diff/UndoEditDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: ArticleEditDetailsActivity
+    file: app/src/main/java/org/wikipedia/diff/ArticleEditDetailsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: LangLinksScreen
+    file: app/src/main/java/org/wikipedia/language/LangLinksScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: LangLinksActivity
+    file: app/src/main/java/org/wikipedia/language/LangLinksActivity.kt
+    type: activity
+    category: logic_screen
+  - name: AddLanguagesListActivity
+    file: app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListActivity.kt
+    type: activity
+    category: logic_screen
+  - name: AddLanguagesListScreen
+    file: app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: ActivityTabCustomizationActivity
+    file: app/src/main/java/org/wikipedia/activitytab/ActivityTabCustomizationActivity.kt
+    type: composable
+    category: logic_screen
+  - name: ActivityTabOnboardingActivity
+    file: app/src/main/java/org/wikipedia/activitytab/ActivityTabOnboardingActivity.kt
+    type: composable
+    category: logic_screen
+  - name: ActivityTabFragment
+    file: app/src/main/java/org/wikipedia/activitytab/ActivityTabFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: Activity
+    file: app/src/main/java/org/wikipedia/extensions/Activity.kt
+    type: activity
+    category: logic_screen
+  - name: SearchResultsScreen
+    file: app/src/main/java/org/wikipedia/search/SearchResultsScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: RecentSearchesFragment
+    file: app/src/main/java/org/wikipedia/search/RecentSearchesFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SearchResultsFragment
+    file: app/src/main/java/org/wikipedia/search/SearchResultsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SearchActivity
+    file: app/src/main/java/org/wikipedia/search/SearchActivity.kt
+    type: activity
+    category: logic_screen
+  - name: SearchFragment
+    file: app/src/main/java/org/wikipedia/search/SearchFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: HybridSearchOnboardingActivity
+    file: app/src/main/java/org/wikipedia/search/HybridSearchOnboardingActivity.kt
+    type: composable
+    category: logic_screen
+  - name: HybridSearchResultsScreen
+    file: app/src/main/java/org/wikipedia/search/HybridSearchResultsScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: WiktionaryDialogScreen
+    file: app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialogScreen.kt
+    type: composable
+    category: logic_compose_screen
+  - name: WiktionaryDialog
+    file: app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: EditSectionActivity
+    file: app/src/main/java/org/wikipedia/edit/EditSectionActivity.kt
+    type: activity
+    category: logic_screen
+  - name: EditSummaryFragment
+    file: app/src/main/java/org/wikipedia/edit/summaries/EditSummaryFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: InsertTemplateFragment
+    file: app/src/main/java/org/wikipedia/edit/templates/InsertTemplateFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: TemplatesSearchActivity
+    file: app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchActivity.kt
+    type: activity
+    category: logic_screen
+  - name: EditPreviewFragment
+    file: app/src/main/java/org/wikipedia/edit/preview/EditPreviewFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: InsertMediaImageSizeDialog
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageSizeDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: InsertMediaImageTypeDialog
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageTypeDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: InsertMediaSettingsFragment
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaSettingsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: InsertMediaAdvancedSettingsFragment
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaAdvancedSettingsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: InsertMediaImagePositionDialog
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImagePositionDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: InsertMediaActivity
+    file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ThemeChooserDialog
+    file: app/src/main/java/org/wikipedia/theme/ThemeChooserDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: ThemeFittingRoomFragment
+    file: app/src/main/java/org/wikipedia/theme/ThemeFittingRoomFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: ThemeFittingRoomActivity
+    file: app/src/main/java/org/wikipedia/theme/ThemeFittingRoomActivity.kt
+    type: activity
+    category: logic_screen
+  - name: FeedFragment
+    file: app/src/main/java/org/wikipedia/feed/FeedFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: SuggestedEditsCardItemFragment
+    file: app/src/main/java/org/wikipedia/feed/suggestededits/SuggestedEditsCardItemFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: ConfigureActivity
+    file: app/src/main/java/org/wikipedia/feed/configure/ConfigureActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ConfigureFragment
+    file: app/src/main/java/org/wikipedia/feed/configure/ConfigureFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: TopReadArticlesActivity
+    file: app/src/main/java/org/wikipedia/feed/topread/TopReadArticlesActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TopReadFragment
+    file: app/src/main/java/org/wikipedia/feed/topread/TopReadFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: NewsFragment
+    file: app/src/main/java/org/wikipedia/feed/news/NewsFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: NewsActivity
+    file: app/src/main/java/org/wikipedia/feed/news/NewsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: RegionalLanguageVariantSelectionDialog
+    file: app/src/main/java/org/wikipedia/feed/view/RegionalLanguageVariantSelectionDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: OnThisDayFragment
+    file: app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: OnThisDayActivity
+    file: app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayActivity.kt
+    type: activity
+    category: logic_screen
+  - name: MenuNavTabDialog
+    file: app/src/main/java/org/wikipedia/navtab/MenuNavTabDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: HistoryFragment
+    file: app/src/main/java/org/wikipedia/history/HistoryFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: CreateAccountActivity
+    file: app/src/main/java/org/wikipedia/createaccount/CreateAccountActivity.kt
+    type: activity
+    category: logic_screen
+  - name: RandomItemFragment
+    file: app/src/main/java/org/wikipedia/random/RandomItemFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: RandomActivity
+    file: app/src/main/java/org/wikipedia/random/RandomActivity.kt
+    type: activity
+    category: logic_screen
+  - name: RandomFragment
+    file: app/src/main/java/org/wikipedia/random/RandomFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: MainActivity
+    file: app/src/main/java/org/wikipedia/main/MainActivity.kt
+    type: activity
+    category: logic_screen
+  - name: MainFragment
+    file: app/src/main/java/org/wikipedia/main/MainFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: CustomDatePicker
+    file: app/src/main/java/org/wikipedia/views/CustomDatePicker.kt
+    type: dialog_fragment
+    category: logic_other
+  - name: SuggestedArticleDescriptionsReportDialog
+    file: app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsReportDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: TextInputDialog
+    file: app/src/main/java/org/wikipedia/views/TextInputDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SuggestedArticleDescriptionsDialog
+    file: app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: EditNoticesDialog
+    file: app/src/main/java/org/wikipedia/views/EditNoticesDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: SurveyDialog
+    file: app/src/main/java/org/wikipedia/views/SurveyDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: AllowSnackbarOverBottomSheet
+    file: app/src/main/java/org/wikipedia/views/AllowSnackbarOverBottomSheet.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: OnThisDayGamePlayFragment
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGamePlayFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: OnThisDayGameActivity
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameActivity.kt
+    type: activity
+    category: logic_screen
+  - name: OnThisDayGameResultFragment
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameResultFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: OnThisDayGameMainMenuFragment
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameMainMenuFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: OnThisDayGameBaseFragment
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameBaseFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: OnThisDayGameArticleBottomSheet
+    file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameArticleBottomSheet.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: CategoryActivity
+    file: app/src/main/java/org/wikipedia/categories/CategoryActivity.kt
+    type: activity
+    category: logic_screen
+  - name: CategoryDialog
+    file: app/src/main/java/org/wikipedia/categories/CategoryDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: NotificationFilterActivity
+    file: app/src/main/java/org/wikipedia/notifications/NotificationFilterActivity.kt
+    type: activity
+    category: logic_screen
+  - name: NotificationActivity
+    file: app/src/main/java/org/wikipedia/notifications/NotificationActivity.kt
+    type: activity
+    category: logic_screen
+  - name: LoginActivity
+    file: app/src/main/java/org/wikipedia/login/LoginActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ResetPasswordActivity
+    file: app/src/main/java/org/wikipedia/login/ResetPasswordActivity.kt
+    type: activity
+    category: logic_screen
+  - name: InitialOnboardingActivity
+    file: app/src/main/java/org/wikipedia/onboarding/InitialOnboardingActivity.kt
+    type: activity
+    category: logic_screen
+  - name: OnboardingFragment
+    file: app/src/main/java/org/wikipedia/onboarding/OnboardingFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: InitialOnboardingFragment
+    file: app/src/main/java/org/wikipedia/onboarding/InitialOnboardingFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: WatchlistFragment
+    file: app/src/main/java/org/wikipedia/watchlist/WatchlistFragment.kt
+    type: fragment
+    category: logic_screen
+  - name: WatchlistExpiryDialog
+    file: app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: WatchlistFilterActivity
+    file: app/src/main/java/org/wikipedia/watchlist/WatchlistFilterActivity.kt
+    type: activity
+    category: logic_screen
+  - name: WatchlistActivity
+    file: app/src/main/java/org/wikipedia/watchlist/WatchlistActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TalkTopicActivity
+    file: app/src/main/java/org/wikipedia/talk/TalkTopicActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TalkTopicsActivity
+    file: app/src/main/java/org/wikipedia/talk/TalkTopicsActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TalkReplyActivity
+    file: app/src/main/java/org/wikipedia/talk/TalkReplyActivity.kt
+    type: activity
+    category: logic_screen
+  - name: ArchivedTalkPagesActivity
+    file: app/src/main/java/org/wikipedia/talk/ArchivedTalkPagesActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TalkTemplatesActivity
+    file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesActivity.kt
+    type: activity
+    category: logic_screen
+  - name: TalkTemplatesTextInputDialog
+    file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesTextInputDialog.kt
+    type: dialog_fragment
+    category: logic_dialog
+  - name: TalkTemplatesFragment
+    file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesFragment.kt
+    type: fragment
+    category: logic_screen
+  chains:
+  - screen_name: NotificationSettingsActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/NotificationSettingsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/NotificationSettingsActivity.kt
+  - screen_name: SettingsFragment
+    screen_file: app/src/main/java/org/wikipedia/settings/SettingsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/SettingsFragment.kt
+  - screen_name: AppIconDialog
+    screen_file: app/src/main/java/org/wikipedia/settings/AppIconDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/AppIconDialog.kt
+  - screen_name: AboutActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/AboutActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/AboutActivity.kt
+  - screen_name: SettingsActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/SettingsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/SettingsActivity.kt
+  - screen_name: LicenseActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/LicenseActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/LicenseActivity.kt
+  - screen_name: PreferenceLoaderFragment
+    screen_file: app/src/main/java/org/wikipedia/settings/PreferenceLoaderFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/PreferenceLoaderFragment.kt
+  - screen_name: BaseSettingsActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/BaseSettingsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/BaseSettingsActivity.kt
+  - screen_name: NotificationSettingsFragment
+    screen_file: app/src/main/java/org/wikipedia/settings/NotificationSettingsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/NotificationSettingsFragment.kt
+  - screen_name: WikipediaLanguagesActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesActivity.kt
+  - screen_name: WikipediaLanguagesFragment
+    screen_file: app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/languages/WikipediaLanguagesFragment.kt
+  - screen_name: DeveloperSettingsActivity
+    screen_file: app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsActivity.kt
+  - screen_name: DeveloperSettingsFragment
+    screen_file: app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/dev/DeveloperSettingsFragment.kt
+  - screen_name: CategoryDeveloperPlayGround
+    screen_file: app/src/main/java/org/wikipedia/settings/dev/playground/CategoryDeveloperPlayGroundActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/settings/dev/playground/CategoryDeveloperPlayGroundViewModel.kt
+    - app/src/main/java/org/wikipedia/settings/dev/playground/CategoryDeveloperPlayGroundActivity.kt
+  - screen_name: PageFragment
+    screen_file: app/src/main/java/org/wikipedia/page/PageFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/PageViewModel.kt
+    - app/src/main/java/org/wikipedia/page/PageFragment.kt
+  - screen_name: ExtendedBottomSheetDialogFragment
+    screen_file: app/src/main/java/org/wikipedia/page/ExtendedBottomSheetDialogFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/PageViewModel.kt
+    - app/src/main/java/org/wikipedia/page/ExtendedBottomSheetDialogFragment.kt
+  - screen_name: PageActivity
+    screen_file: app/src/main/java/org/wikipedia/page/PageActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/commons/FilePageViewModel.kt
+    - app/src/main/java/org/wikipedia/page/PageActivity.kt
+  - screen_name: TabActivity
+    screen_file: app/src/main/java/org/wikipedia/page/tabs/TabActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/tabs/TabActivity.kt
+  - screen_name: EditHistoryListActivity
+    screen_file: app/src/main/java/org/wikipedia/page/edithistory/EditHistoryListActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/edithistory/EditHistoryListViewModel.kt
+    - app/src/main/java/org/wikipedia/page/edithistory/EditHistoryListActivity.kt
+  - screen_name: ReferenceDialog
+    screen_file: app/src/main/java/org/wikipedia/page/references/ReferenceDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/references/ReferenceDialog.kt
+  - screen_name: CampaignDialog
+    screen_file: app/src/main/java/org/wikipedia/page/campaign/CampaignDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/campaign/CampaignDialog.kt
+  - screen_name: LinkPreviewDialog
+    screen_file: app/src/main/java/org/wikipedia/page/linkpreview/LinkPreviewDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/linkpreview/LinkPreviewViewModel.kt
+    - app/src/main/java/org/wikipedia/page/linkpreview/LinkPreviewDialog.kt
+  - screen_name: PageIssuesDialog
+    screen_file: app/src/main/java/org/wikipedia/page/issues/PageIssuesDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/issues/PageIssuesDialog.kt
+  - screen_name: CustomizeToolbarActivity
+    screen_file: app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarViewModel.kt
+    - app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarActivity.kt
+  - screen_name: CustomizeToolbarFragment
+    screen_file: app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarViewModel.kt
+    - app/src/main/java/org/wikipedia/page/customize/CustomizeToolbarFragment.kt
+  - screen_name: UserContribFilterActivity
+    screen_file: app/src/main/java/org/wikipedia/usercontrib/UserContribFilterActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/usercontrib/UserContribListViewModel.kt
+    - app/src/main/java/org/wikipedia/usercontrib/UserContribFilterActivity.kt
+  - screen_name: UserContribListActivity
+    screen_file: app/src/main/java/org/wikipedia/usercontrib/UserContribListActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/usercontrib/UserContribListViewModel.kt
+    - app/src/main/java/org/wikipedia/usercontrib/UserContribListActivity.kt
+  - screen_name: UserInformationDialog
+    screen_file: app/src/main/java/org/wikipedia/usercontrib/UserInformationDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/usercontrib/UserInformationDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/usercontrib/UserInformationDialog.kt
+  - screen_name: SuggestedEditsVandalismPatrolFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsVandalismPatrolFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsVandalismPatrolFragment.kt
+  - screen_name: SuggestedEditsImageRecsDialog
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsDialog.kt
+  - screen_name: SuggestedEditsRecentEditsActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsActivity.kt
+  - screen_name: SuggestedEditsImageRecsOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsOnboardingActivity.kt
+  - screen_name: SuggestedEditsRecentEditsOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingActivity.kt
+  - screen_name: SuggestedEditsImageTagDialog
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagDialog.kt
+  - screen_name: SuggestionsActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestionsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestionsActivity.kt
+  - screen_name: SuggestedEditsCardsItemFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsItemFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsItemViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsItemFragment.kt
+  - screen_name: SuggestedEditsRecentEditsFilterActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFilterActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFilterActivity.kt
+  - screen_name: SuggestedEditsCardsFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsCardsFragment.kt
+  - screen_name: SuggestedEditsTasksActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksActivity.kt
+  - screen_name: SuggestedEditsImageRecsFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageRecsFragment.kt
+  - screen_name: SuggestedEditsTasksFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragment.kt
+  - screen_name: SuggestedEditsImageTagEditActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagEditActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagEditActivity.kt
+  - screen_name: SuggestedEditsItemFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsItemFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsItemFragment.kt
+  - screen_name: SuggestedEditsImageTagsOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsOnboardingActivity.kt
+  - screen_name: SuggestedEditsRecentEditsOnboardingFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsTasksFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsOnboardingFragment.kt
+  - screen_name: SuggestedEditsRecentEditsFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsRecentEditsFragment.kt
+  - screen_name: SuggestedEditsImageTagsFragment
+    screen_file: app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsViewModel.kt
+    - app/src/main/java/org/wikipedia/suggestededits/SuggestedEditsImageTagsFragment.kt
+  - screen_name: DonateDialog
+    screen_file: app/src/main/java/org/wikipedia/donate/DonateDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/donate/DonateViewModel.kt
+    - app/src/main/java/org/wikipedia/donate/DonateDialog.kt
+  - screen_name: DonationReminderActivity
+    screen_file: app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderViewModel.kt
+    - app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderActivity.kt
+  - screen_name: DonationReminderScreen
+    screen_file: app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderViewModel.kt
+    - app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderScreen.kt
+  - screen_name: YearInReviewActivity
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewActivity.kt
+  - screen_name: YearInReviewCaptureRequest
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenCaptureHandler.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenCaptureHandler.kt
+  - screen_name: YearInReviewOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingActivity.kt
+  - screen_name: YearInReviewOnboardingScreen
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewOnboardingScreen.kt
+  - screen_name: YearInReviewDialog
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewDialog.kt
+  - screen_name: YearInReviewScreenDeck
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenDeck.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewScreenDeck.kt
+  - screen_name: YearInReviewHighlightsScreen
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewHighlightsScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewHighlightsScreen.kt
+  - screen_name: YearInReviewGeoSlide
+    screen_file: app/src/main/java/org/wikipedia/yearinreview/YearInReviewGeoSlide.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewViewModel.kt
+    - app/src/main/java/org/wikipedia/yearinreview/YearInReviewGeoSlide.kt
+  - screen_name: ReadingListTitleDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/ReadingListTitleDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListTitleDialog.kt
+  - screen_name: RemoveFromReadingListsDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/RemoveFromReadingListsDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/RemoveFromReadingListsDialog.kt
+  - screen_name: ReadingListsFragment
+    screen_file: app/src/main/java/org/wikipedia/readinglist/ReadingListsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListsFragment.kt
+  - screen_name: ReadingListActivity
+    screen_file: app/src/main/java/org/wikipedia/readinglist/ReadingListActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListActivity.kt
+  - screen_name: AddToReadingListDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/AddToReadingListDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/AddToReadingListDialog.kt
+  - screen_name: MoveToReadingListDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/MoveToReadingListDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/MoveToReadingListDialog.kt
+  - screen_name: SortReadingListsDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/SortReadingListsDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/SortReadingListsDialog.kt
+  - screen_name: ReadingListFragment
+    screen_file: app/src/main/java/org/wikipedia/readinglist/ReadingListFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragment.kt
+  - screen_name: ReadingListItemActionsDialog
+    screen_file: app/src/main/java/org/wikipedia/readinglist/ReadingListItemActionsDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/ReadingListItemActionsDialog.kt
+  - screen_name: RecommendedReadingListSourceScreen
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceScreen.kt
+  - screen_name: RecommendedReadingListSettingsScreen
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsScreen.kt
+  - screen_name: RecommendedReadingListInterestsFragment
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListInterestsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListInterestsViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListInterestsFragment.kt
+  - screen_name: RecommendedReadingListSettingsActivity
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSettingsActivity.kt
+  - screen_name: RecommendedReadingListSourceFragment
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListSourceFragment.kt
+  - screen_name: RecommendedReadingListOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/donate/donationreminder/DonationReminderViewModel.kt
+    - app/src/main/java/org/wikipedia/readinglist/recommended/RecommendedReadingListOnboardingActivity.kt
+  - screen_name: ImagePreviewDialog
+    screen_file: app/src/main/java/org/wikipedia/commons/ImagePreviewDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/commons/ImagePreviewViewModel.kt
+    - app/src/main/java/org/wikipedia/commons/ImagePreviewDialog.kt
+  - screen_name: FilePageFragment
+    screen_file: app/src/main/java/org/wikipedia/commons/FilePageFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/commons/FilePageViewModel.kt
+    - app/src/main/java/org/wikipedia/commons/FilePageFragment.kt
+  - screen_name: FilePageActivity
+    screen_file: app/src/main/java/org/wikipedia/commons/FilePageActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/commons/FilePageViewModel.kt
+    - app/src/main/java/org/wikipedia/commons/FilePageActivity.kt
+  - screen_name: SingleFragmentActivity
+    screen_file: app/src/main/java/org/wikipedia/activity/SingleFragmentActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/activity/SingleFragmentActivity.kt
+  - screen_name: BaseActivity
+    screen_file: app/src/main/java/org/wikipedia/activity/BaseActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/activity/BaseActivity.kt
+  - screen_name: SingleWebViewActivity
+    screen_file: app/src/main/java/org/wikipedia/activity/SingleWebViewActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/PageViewModel.kt
+    - app/src/main/java/org/wikipedia/activity/SingleWebViewActivity.kt
+  - screen_name: PlacesActivity
+    screen_file: app/src/main/java/org/wikipedia/places/PlacesActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/places/PlacesFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/places/PlacesActivity.kt
+  - screen_name: PlacesFilterActivity
+    screen_file: app/src/main/java/org/wikipedia/places/PlacesFilterActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/places/PlacesFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/places/PlacesFilterActivity.kt
+  - screen_name: PlacesFragment
+    screen_file: app/src/main/java/org/wikipedia/places/PlacesFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/places/PlacesFragmentViewModel.kt
+    - app/src/main/java/org/wikipedia/places/PlacesFragment.kt
+  - screen_name: GalleryActivity
+    screen_file: app/src/main/java/org/wikipedia/gallery/GalleryActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/gallery/GalleryViewModel.kt
+    - app/src/main/java/org/wikipedia/gallery/GalleryActivity.kt
+  - screen_name: GalleryItemFragment
+    screen_file: app/src/main/java/org/wikipedia/gallery/GalleryItemFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/gallery/GalleryItemViewModel.kt
+    - app/src/main/java/org/wikipedia/gallery/GalleryItemFragment.kt
+  - screen_name: WikipediaAlertDialog
+    screen_file: app/src/main/java/org/wikipedia/compose/components/WikipediaAlertDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/compose/components/WikipediaAlertDialog.kt
+  - screen_name: DescriptionEditSuccessFragment
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessFragment.kt
+  - screen_name: DescriptionEditTutorialFragment
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialFragment.kt
+  - screen_name: DescriptionEditFragment
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditFragment.kt
+  - screen_name: DescriptionEditActivity
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditActivity.kt
+  - screen_name: DescriptionEditTutorialActivity
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditTutorialActivity.kt
+  - screen_name: DescriptionEditSuccessActivity
+    screen_file: app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditViewModel.kt
+    - app/src/main/java/org/wikipedia/descriptions/DescriptionEditSuccessActivity.kt
+  - screen_name: ArticleEditDetailsFragment
+    screen_file: app/src/main/java/org/wikipedia/diff/ArticleEditDetailsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/diff/ArticleEditDetailsViewModel.kt
+    - app/src/main/java/org/wikipedia/diff/ArticleEditDetailsFragment.kt
+  - screen_name: UndoEditDialog
+    screen_file: app/src/main/java/org/wikipedia/diff/UndoEditDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/diff/ArticleEditDetailsViewModel.kt
+    - app/src/main/java/org/wikipedia/diff/UndoEditDialog.kt
+  - screen_name: ArticleEditDetailsActivity
+    screen_file: app/src/main/java/org/wikipedia/diff/ArticleEditDetailsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/diff/ArticleEditDetailsViewModel.kt
+    - app/src/main/java/org/wikipedia/diff/ArticleEditDetailsActivity.kt
+  - screen_name: LangLinksScreen
+    screen_file: app/src/main/java/org/wikipedia/language/LangLinksScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/language/LangLinksViewModel.kt
+    - app/src/main/java/org/wikipedia/language/LangLinksScreen.kt
+  - screen_name: LangLinksActivity
+    screen_file: app/src/main/java/org/wikipedia/language/LangLinksActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/language/LangLinksViewModel.kt
+    - app/src/main/java/org/wikipedia/language/LangLinksActivity.kt
+  - screen_name: AddLanguagesListActivity
+    screen_file: app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesViewModel.kt
+    - app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListActivity.kt
+  - screen_name: AddLanguagesListScreen
+    screen_file: app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesViewModel.kt
+    - app/src/main/java/org/wikipedia/language/addlanguages/AddLanguagesListScreen.kt
+  - screen_name: ActivityTabCustomizationActivity
+    screen_file: app/src/main/java/org/wikipedia/activitytab/ActivityTabCustomizationActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabViewModel.kt
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabCustomizationActivity.kt
+  - screen_name: ActivityTabOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/activitytab/ActivityTabOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabViewModel.kt
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabOnboardingActivity.kt
+  - screen_name: ActivityTabFragment
+    screen_file: app/src/main/java/org/wikipedia/activitytab/ActivityTabFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabViewModel.kt
+    - app/src/main/java/org/wikipedia/activitytab/ActivityTabFragment.kt
+  - screen_name: Activity
+    screen_file: app/src/main/java/org/wikipedia/extensions/Activity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/usercontrib/UserContribListViewModel.kt
+    - app/src/main/java/org/wikipedia/extensions/Activity.kt
+  - screen_name: SearchResultsScreen
+    screen_file: app/src/main/java/org/wikipedia/search/SearchResultsScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsScreen.kt
+  - screen_name: RecentSearchesFragment
+    screen_file: app/src/main/java/org/wikipedia/search/RecentSearchesFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/RecentSearchesFragment.kt
+  - screen_name: SearchResultsFragment
+    screen_file: app/src/main/java/org/wikipedia/search/SearchResultsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsFragment.kt
+  - screen_name: SearchActivity
+    screen_file: app/src/main/java/org/wikipedia/search/SearchActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchViewModel.kt
+    - app/src/main/java/org/wikipedia/search/SearchActivity.kt
+  - screen_name: SearchFragment
+    screen_file: app/src/main/java/org/wikipedia/search/SearchFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/SearchFragment.kt
+  - screen_name: HybridSearchOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/search/HybridSearchOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/HybridSearchOnboardingActivity.kt
+  - screen_name: HybridSearchResultsScreen
+    screen_file: app/src/main/java/org/wikipedia/search/HybridSearchResultsScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/search/SearchRepository.kt
+    - app/src/main/java/org/wikipedia/search/SearchResultsViewModel.kt
+    - app/src/main/java/org/wikipedia/search/HybridSearchResultsScreen.kt
+  - screen_name: WiktionaryDialogScreen
+    screen_file: app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialogScreen.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/wiktionary/WiktionaryViewModel.kt
+    - app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialogScreen.kt
+  - screen_name: WiktionaryDialog
+    screen_file: app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/wiktionary/WiktionaryViewModel.kt
+    - app/src/main/java/org/wikipedia/wiktionary/WiktionaryDialog.kt
+  - screen_name: EditSectionActivity
+    screen_file: app/src/main/java/org/wikipedia/edit/EditSectionActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/EditSectionViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/EditSectionActivity.kt
+  - screen_name: EditSummaryFragment
+    screen_file: app/src/main/java/org/wikipedia/edit/summaries/EditSummaryFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/EditSectionViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/summaries/EditSummaryFragment.kt
+  - screen_name: InsertTemplateFragment
+    screen_file: app/src/main/java/org/wikipedia/edit/templates/InsertTemplateFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/templates/InsertTemplateFragment.kt
+  - screen_name: TemplatesSearchActivity
+    screen_file: app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/templates/TemplatesSearchActivity.kt
+  - screen_name: EditPreviewFragment
+    screen_file: app/src/main/java/org/wikipedia/edit/preview/EditPreviewFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/page/PageViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/preview/EditPreviewFragment.kt
+  - screen_name: InsertMediaImageSizeDialog
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageSizeDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageSizeDialog.kt
+  - screen_name: InsertMediaImageTypeDialog
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageTypeDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImageTypeDialog.kt
+  - screen_name: InsertMediaSettingsFragment
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaSettingsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaSettingsFragment.kt
+  - screen_name: InsertMediaAdvancedSettingsFragment
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaAdvancedSettingsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaAdvancedSettingsFragment.kt
+  - screen_name: InsertMediaImagePositionDialog
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImagePositionDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaImagePositionDialog.kt
+  - screen_name: InsertMediaActivity
+    screen_file: app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaViewModel.kt
+    - app/src/main/java/org/wikipedia/edit/insertmedia/InsertMediaActivity.kt
+  - screen_name: ThemeChooserDialog
+    screen_file: app/src/main/java/org/wikipedia/theme/ThemeChooserDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/theme/ThemeChooserDialog.kt
+  - screen_name: ThemeFittingRoomFragment
+    screen_file: app/src/main/java/org/wikipedia/theme/ThemeFittingRoomFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/theme/ThemeFittingRoomFragment.kt
+  - screen_name: ThemeFittingRoomActivity
+    screen_file: app/src/main/java/org/wikipedia/theme/ThemeFittingRoomActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/theme/ThemeFittingRoomActivity.kt
+  - screen_name: FeedFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/FeedFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/FeedFragment.kt
+  - screen_name: SuggestedEditsCardItemFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/suggestededits/SuggestedEditsCardItemFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/suggestededits/SuggestedEditsCardItemViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/suggestededits/SuggestedEditsCardItemFragment.kt
+  - screen_name: ConfigureActivity
+    screen_file: app/src/main/java/org/wikipedia/feed/configure/ConfigureActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/configure/ConfigureViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/configure/ConfigureActivity.kt
+  - screen_name: ConfigureFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/configure/ConfigureFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/configure/ConfigureViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/configure/ConfigureFragment.kt
+  - screen_name: TopReadArticlesActivity
+    screen_file: app/src/main/java/org/wikipedia/feed/topread/TopReadArticlesActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/topread/TopReadViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/topread/TopReadArticlesActivity.kt
+  - screen_name: TopReadFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/topread/TopReadFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/topread/TopReadViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/topread/TopReadFragment.kt
+  - screen_name: NewsFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/news/NewsFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/news/NewsViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/news/NewsFragment.kt
+  - screen_name: NewsActivity
+    screen_file: app/src/main/java/org/wikipedia/feed/news/NewsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/news/NewsViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/news/NewsActivity.kt
+  - screen_name: RegionalLanguageVariantSelectionDialog
+    screen_file: app/src/main/java/org/wikipedia/feed/view/RegionalLanguageVariantSelectionDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/view/RegionalLanguageVariantSelectionDialog.kt
+  - screen_name: OnThisDayFragment
+    screen_file: app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayFragment.kt
+  - screen_name: OnThisDayActivity
+    screen_file: app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayViewModel.kt
+    - app/src/main/java/org/wikipedia/feed/onthisday/OnThisDayActivity.kt
+  - screen_name: MenuNavTabDialog
+    screen_file: app/src/main/java/org/wikipedia/navtab/MenuNavTabDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/navtab/MenuNavTabDialog.kt
+  - screen_name: HistoryFragment
+    screen_file: app/src/main/java/org/wikipedia/history/HistoryFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/history/HistoryViewModel.kt
+    - app/src/main/java/org/wikipedia/history/HistoryFragment.kt
+  - screen_name: CreateAccountActivity
+    screen_file: app/src/main/java/org/wikipedia/createaccount/CreateAccountActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/createaccount/CreateAccountActivityViewModel.kt
+    - app/src/main/java/org/wikipedia/createaccount/CreateAccountActivity.kt
+  - screen_name: RandomItemFragment
+    screen_file: app/src/main/java/org/wikipedia/random/RandomItemFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/random/RandomItemViewModel.kt
+    - app/src/main/java/org/wikipedia/random/RandomItemFragment.kt
+  - screen_name: RandomActivity
+    screen_file: app/src/main/java/org/wikipedia/random/RandomActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/random/RandomItemViewModel.kt
+    - app/src/main/java/org/wikipedia/random/RandomActivity.kt
+  - screen_name: RandomFragment
+    screen_file: app/src/main/java/org/wikipedia/random/RandomFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/random/RandomViewModel.kt
+    - app/src/main/java/org/wikipedia/random/RandomFragment.kt
+  - screen_name: MainActivity
+    screen_file: app/src/main/java/org/wikipedia/main/MainActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/main/MainActivity.kt
+  - screen_name: MainFragment
+    screen_file: app/src/main/java/org/wikipedia/main/MainFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/main/MainFragment.kt
+  - screen_name: CustomDatePicker
+    screen_file: app/src/main/java/org/wikipedia/views/CustomDatePicker.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/CustomDatePicker.kt
+  - screen_name: SuggestedArticleDescriptionsReportDialog
+    screen_file: app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsReportDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsReportDialog.kt
+  - screen_name: TextInputDialog
+    screen_file: app/src/main/java/org/wikipedia/views/TextInputDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/TextInputDialog.kt
+  - screen_name: SuggestedArticleDescriptionsDialog
+    screen_file: app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/SuggestedArticleDescriptionsDialog.kt
+  - screen_name: EditNoticesDialog
+    screen_file: app/src/main/java/org/wikipedia/views/EditNoticesDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/EditNoticesDialog.kt
+  - screen_name: SurveyDialog
+    screen_file: app/src/main/java/org/wikipedia/views/SurveyDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/SurveyDialog.kt
+  - screen_name: AllowSnackbarOverBottomSheet
+    screen_file: app/src/main/java/org/wikipedia/views/AllowSnackbarOverBottomSheet.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/views/AllowSnackbarOverBottomSheet.kt
+  - screen_name: OnThisDayGamePlayFragment
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGamePlayFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGamePlayFragment.kt
+  - screen_name: OnThisDayGameActivity
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameActivity.kt
+  - screen_name: OnThisDayGameResultFragment
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameResultFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameResultFragment.kt
+  - screen_name: OnThisDayGameMainMenuFragment
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameMainMenuFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameMainMenuFragment.kt
+  - screen_name: OnThisDayGameBaseFragment
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameBaseFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameBaseFragment.kt
+  - screen_name: OnThisDayGameArticleBottomSheet
+    screen_file: app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameArticleBottomSheet.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameViewModel.kt
+    - app/src/main/java/org/wikipedia/games/onthisday/OnThisDayGameArticleBottomSheet.kt
+  - screen_name: CategoryActivity
+    screen_file: app/src/main/java/org/wikipedia/categories/CategoryActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/categories/CategoryActivityViewModel.kt
+    - app/src/main/java/org/wikipedia/categories/CategoryActivity.kt
+  - screen_name: CategoryDialog
+    screen_file: app/src/main/java/org/wikipedia/categories/CategoryDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/categories/CategoryDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/categories/CategoryDialog.kt
+  - screen_name: NotificationFilterActivity
+    screen_file: app/src/main/java/org/wikipedia/notifications/NotificationFilterActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/notifications/NotificationViewModel.kt
+    - app/src/main/java/org/wikipedia/notifications/NotificationFilterActivity.kt
+  - screen_name: NotificationActivity
+    screen_file: app/src/main/java/org/wikipedia/notifications/NotificationActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/notifications/NotificationViewModel.kt
+    - app/src/main/java/org/wikipedia/notifications/NotificationActivity.kt
+  - screen_name: LoginActivity
+    screen_file: app/src/main/java/org/wikipedia/login/LoginActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/login/LoginActivity.kt
+  - screen_name: ResetPasswordActivity
+    screen_file: app/src/main/java/org/wikipedia/login/ResetPasswordActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/login/ResetPasswordActivity.kt
+  - screen_name: InitialOnboardingActivity
+    screen_file: app/src/main/java/org/wikipedia/onboarding/InitialOnboardingActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/onboarding/InitialOnboardingActivity.kt
+  - screen_name: OnboardingFragment
+    screen_file: app/src/main/java/org/wikipedia/onboarding/OnboardingFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/onboarding/OnboardingFragment.kt
+  - screen_name: InitialOnboardingFragment
+    screen_file: app/src/main/java/org/wikipedia/onboarding/InitialOnboardingFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/onboarding/InitialOnboardingFragment.kt
+  - screen_name: WatchlistFragment
+    screen_file: app/src/main/java/org/wikipedia/watchlist/WatchlistFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistFragment.kt
+  - screen_name: WatchlistExpiryDialog
+    screen_file: app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialog.kt
+  - screen_name: WatchlistFilterActivity
+    screen_file: app/src/main/java/org/wikipedia/watchlist/WatchlistFilterActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistFilterActivity.kt
+  - screen_name: WatchlistActivity
+    screen_file: app/src/main/java/org/wikipedia/watchlist/WatchlistActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistExpiryDialogViewModel.kt
+    - app/src/main/java/org/wikipedia/watchlist/WatchlistActivity.kt
+  - screen_name: TalkTopicActivity
+    screen_file: app/src/main/java/org/wikipedia/talk/TalkTopicActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/TalkTopicViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/TalkTopicActivity.kt
+  - screen_name: TalkTopicsActivity
+    screen_file: app/src/main/java/org/wikipedia/talk/TalkTopicsActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/TalkTopicsViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/TalkTopicsActivity.kt
+  - screen_name: TalkReplyActivity
+    screen_file: app/src/main/java/org/wikipedia/talk/TalkReplyActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/TalkReplyViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/TalkReplyActivity.kt
+  - screen_name: ArchivedTalkPagesActivity
+    screen_file: app/src/main/java/org/wikipedia/talk/ArchivedTalkPagesActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/ArchivedTalkPagesViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/ArchivedTalkPagesActivity.kt
+  - screen_name: TalkTemplatesActivity
+    screen_file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesActivity.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesActivity.kt
+  - screen_name: TalkTemplatesTextInputDialog
+    screen_file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesTextInputDialog.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesTextInputDialog.kt
+  - screen_name: TalkTemplatesFragment
+    screen_file: app/src/main/java/org/wikipedia/talk/template/TalkTemplatesFragment.kt
+    confidence: high
+    members:
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesViewModel.kt
+    - app/src/main/java/org/wikipedia/talk/template/TalkTemplatesFragment.kt
+  updated_at: '2026-02-27T15:49:10+00:00'
+
+# overrides:
+#   reclassify:
+#     - file: "app/src/main/java/com/example/CustomView.kt"
+#       screen_type: "compose_screen"
+#   ignore:
+#     - "app/src/main/java/com/example/DebugActivity.kt"
+#   extra_screens:
+#     - name: "SettingsScreen"
+#       file: "app/src/main/java/com/example/SettingsComposable.kt"
+#       type: "composable"
